@@ -40,6 +40,7 @@ public class LoginServlet extends HttpServlet {
 	out.println("</head>");
 		out.println("<body>");
 		out.println("<h1> Hi This Is java Project </h1>");
+		out.println("<h1> Hi This is updated code/h1>");
 	
 		out.println("</body>");
 		out.println("</html>");

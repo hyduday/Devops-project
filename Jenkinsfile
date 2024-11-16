@@ -22,7 +22,7 @@ pipeline {
             steps {
                 // Deploy the application (Optional)
                 sh 'docker build -t myfile .'
-                sh 'docker run -dt --name appcontainer -p 8081:8080 myfile'
+                sh 'docker run -dt --name appcontainer -p 5081:8080 myfile'
             }
         }
     }

@@ -41,6 +41,7 @@ public class LoginServlet extends HttpServlet {
 	out.println("</head>");
 		out.println("<body>");
 		out.println("<h1> Hi this is my first jenkins project </h1>");
+		out.println("<h1> Hi this is updated jenkins project </h1>");
 		out.println("</body>");
 		out.println("</html>");
 

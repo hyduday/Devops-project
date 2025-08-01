@@ -2,8 +2,6 @@ Welcome to the DevOps test repository for Maven projects
 
 ************************************************************
 
-To use this, your system (Centos 7) should have below tools installed:
-git  //you can use "yum install git -y" for this
 
 
 maven  insallation : install latest version instead of mvn install on terminal..

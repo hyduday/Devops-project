@@ -7,36 +7,22 @@ git  //you can use "yum install git -y" for this
 
 
 maven  insallation : install latest version instead of mvn install on terminal..
+-----------------------------------------------------------------------------
 install Java 
+-----------------------------------------------------------------------------
 sudo apt install openjdk-17-jdk -y
 
-wget https://dlcdn.apache.org/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.tar.gz
-  114  tar -xvzf apache-maven-3.9.4-bin.tar.gz 
-  116  cd apache-maven-3.9.4/
-  128  ln -s  /root/apache-maven-3.9.4/bin/mvn  /usr/bin/
-  129  mvn --version
+cd /opt
+sudo wget https://dlcdn.apache.org/maven/maven-3/3.9.11/binaries/apache-maven-3.9.11-bin.tar.gz
+sudo tar -xvzf apache-maven-3.9.11-bin.tar.gz
+sudo ln -s /opt/apache-maven-3.9.11 /opt/maven
+sudo ln -s /opt/maven/bin/mvn /usr/bin/mvn
+mvn --version
+-----------------------------------------------------
 
 
-
-yum update -y
-   35  yum install openjdk-17-jdk
-
-
-jenkins //follow the installation guideline at https://www.jenkins.io/doc/book/installing/#red-hat-centos
-docker // you can install docker :
-
- sudo yum install -y yum-utils
- sudo yum-config-manager \
-    --add-repo \
-    https://download.docker.com/linux/centos/docker-ce.repo
-    
-    
- sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
- 
- systemctl start docker
----
-
-
+Change permission 
+---------------------------------------------------
 systemctl status jenkins
   482  vi /usr/lib/systemd/system/jenkins.service
   483  cat /usr/lib/systemd/system/jenkins.service
@@ -44,7 +30,7 @@ systemctl status jenkins
   485  systemctl daemon-reload
   486  systemctl restart jenkins
 
--------
+----------------------------------------------
 
 
 use maven to clean the previous builds and  package the war file 

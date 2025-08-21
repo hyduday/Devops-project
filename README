@@ -16,6 +16,7 @@ sudo tar -xvzf apache-maven-3.9.11-bin.tar.gz
 sudo ln -s /opt/apache-maven-3.9.11 /opt/maven
 sudo ln -s /opt/maven/bin/mvn /usr/bin/mvn
 mvn --version
+
 -----------------------------------------------------
 
 

@@ -28,6 +28,7 @@ jobs:
       # Stage 4: Build Docker Image
       - name: Build Docker image
         run: sudo docker build -t myfile .
+        
 
       # Stage 5: Run Docker Container
       - name: Run Docker container

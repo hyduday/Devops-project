@@ -27,8 +27,8 @@ jobs:
 
       # Stage 4: Build Docker Image
       - name: Build Docker image
-        run: docker build -t myfile .
+        run: sudo docker build -t myfile .
 
       # Stage 5: Run Docker Container
       - name: Run Docker container
-        run: docker run -dt --name appcontainer -p 5081:8080 myfile
+        run: sudo docker run -dt --name appcontainer -p 5081:8080 myfile
